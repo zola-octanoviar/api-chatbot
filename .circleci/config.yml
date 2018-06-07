@@ -14,7 +14,7 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mysql:9.4
 
-    working_directory: ~/
+    working_directory: ~/api
 
     steps:
       - checkout
@@ -50,9 +50,9 @@ jobs:
       - run:
           name: Prepare Unit Test
           command: |
-            ./vendor/bin/phpunit --version
-            cd application/tests
+            ./api/vendor/bin/phpunit --version
+            #cd application/tests
 
       # run tests!
       - run: 
-          ~/vendor/bin/phpunit controllers/unit_test.php
+          ~/api/vendor/bin/phpunit controllers/unit_test.php

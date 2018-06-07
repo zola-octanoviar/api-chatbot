@@ -14,7 +14,7 @@ jobs:
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mysql:9.4
 
-    working_directory: ~/kp-api-chatbot
+    working_directory: ~/
 
     steps:
       - checkout
@@ -50,8 +50,9 @@ jobs:
       - run:
           name: Prepare Unit Test
           command: |
-            vendor/bin/phpunit --version
+            ./vendor/bin/phpunit --version
             cd application/tests
 
       # run tests!
-      - run: ../../vendor/bin/phpunit controllers/unit_test.php
+      - run: 
+          ~/vendor/bin/phpunit controllers/unit_test.php

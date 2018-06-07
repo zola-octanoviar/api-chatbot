@@ -48,5 +48,5 @@ jobs:
             pwd 
             cd application/tests
             pwd
-            ./vendor/bin/phpunit controllers/unit_test.php            
+            . $working_directory/vendor/bin/phpunit controllers/unit_test.php            
 

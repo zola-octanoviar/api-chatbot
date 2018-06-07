@@ -57,6 +57,6 @@ jobs:
           command: |
             vendor/bin/phpunit --version
             cd application/tests
-            
+
       # run tests!
-      - run: phpunit controllers/unit_test.php
+      - run: ./vendor/bin/phpunit controllers/unit_test.php

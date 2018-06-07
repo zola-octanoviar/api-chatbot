@@ -30,11 +30,6 @@ jobs:
 
 
       # Download and cache dependencies
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "composer.json" }}
-          # fallback to using the latest cache if no exact match is found
-          - v1-dependencies-
 
       - run:
           name: Display PHP information
@@ -43,18 +38,14 @@ jobs:
             php composer.phar --version
             ls -la
             pwd
-            
+            cd application/tests
+            ls -la
+            pwd
+
 
       - run:
           name: Install project dependencies
           command: php composer.phar install
-
-      #- run: composer install -n --prefer-dist
-
-      - save_cache:
-          paths:
-            - ./vendor
-          key: v1-dependencies-{{ checksum "composer.json" }}
 
       - run:
           name: Prepare Unit Test

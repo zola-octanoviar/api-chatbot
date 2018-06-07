@@ -3,8 +3,9 @@
 ## Requirements
 
 * PHP 5.4.0 or later (5.6 or later is recommended)
-* CodeIgniter 3.x
 * PHPUnit 6
+* XDebug
+* CodeIgniter 3.x
 * Composer
 
 

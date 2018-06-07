@@ -36,23 +36,23 @@ jobs:
           command: |
             php -v
             php composer.phar --version
-            ls -la
-            pwd
-            cd application/tests
-            ls -la
-            pwd
-
 
       - run:
           name: Install project dependencies
           command: php composer.phar install
 
+      test:
+        override:
+          - cd application/tests && ~/api/vendor/bin/phpunit
+
       - run:
           name: Prepare Unit Test
           command: |
-            ~/api/vendor/bin/phpunit --version
+            phpunit --version
+            #~/api/vendor/bin/phpunit --version
             #cd application/tests
 
       # run tests!
-      - run: 
-          ~/api/vendor/bin/phpunit controllers/unit_test.php
+      - run:
+           phpunit controllers/unit_test.php
+          #~/api/vendor/bin/phpunit controllers/unit_test.php

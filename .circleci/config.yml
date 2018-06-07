@@ -47,10 +47,6 @@ jobs:
       - run:
           name: Run Unit Test
           command: |
-            pwd 
             cd application/tests
-            pwd
             ~/repo/vendor/bin/phpunit
-            #phpunit controllers/unit_test.php            
-            #. ~/repo/vendor/bin/phpunit controllers/unit_test.php            
 

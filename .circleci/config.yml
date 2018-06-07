@@ -18,6 +18,8 @@ jobs:
 
     steps:
       - checkout
+
+      # Install Composer
       - run:
           name: Install Composer
           command: |
@@ -25,6 +27,8 @@ jobs:
             php -r "if (hash_file('SHA384', 'composer-setup.php') === trim(file_get_contents('https://composer.github.io/installer.sig'))) { echo 'Installer verified'; } else { echo 'Installer invalid'; unlink('composer-setup.php'); } echo PHP_EOL;"
             php composer-setup.php
             php -r "unlink('composer-setup.php');"
+
+
       # Download and cache dependencies
       - restore_cache:
           keys:

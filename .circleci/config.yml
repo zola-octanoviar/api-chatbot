@@ -55,9 +55,8 @@ jobs:
       - run:
           name: Prepare Unit Test
           command: |
+            vendor/bin/phpunit --version
             cd application/tests
-            phpunit --version
-
-      - run: cd application/tests        
+            
       # run tests!
       - run: phpunit controllers/unit_test.php

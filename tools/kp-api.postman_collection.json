@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "e8295cfe-685d-45e0-94b0-01a54e651920",
+		"name": "kp-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "product rate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{endpoint_url}}/product/rate",
+					"host": [
+						"{{endpoint_url}}"
+					],
+					"path": [
+						"product",
+						"rate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product rate by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{endpoint_url}}/product/rate",
+					"host": [
+						"{{endpoint_url}}"
+					],
+					"path": [
+						"product",
+						"rate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

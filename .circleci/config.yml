@@ -46,6 +46,7 @@ jobs:
           name: Run Unit Test
           command: |
             pwd 
-            cd  application/test 
+            cd application/tests
+            pwd
             ./vendor/bin/phpunit controllers/unit_test.php            
 

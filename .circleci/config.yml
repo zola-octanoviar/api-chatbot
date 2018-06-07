@@ -41,7 +41,7 @@ jobs:
           name: Install project dependencies
           command: php composer.phar install
 
-      test:
+      - test:
         override:
           - cd application/tests && ~/api/vendor/bin/phpunit
 

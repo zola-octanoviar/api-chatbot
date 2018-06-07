@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="TestCase" file="/www/kp/api-chatbot/application/tests/TestCase.php" tests="1" assertions="0" errors="0" failures="1" skipped="0" time="0.000526">
-    <testcase name="Warning" assertions="0" time="0.000526">
-      <warning type="PHPUnit\Framework\Warning">Warning
-No tests found in class "TestCase".
-
-</warning>
-    </testcase>
+  <testsuite name="Unit_test" file="/www/kp/api-chatbot/application/tests/controllers/unit_test.php" tests="3" assertions="6" errors="0" failures="0" skipped="0" time="0.079904">
+    <testcase name="test_rate_get" class="Unit_test" classname="Unit_test" file="/www/kp/api-chatbot/application/tests/controllers/unit_test.php" line="11" assertions="2" time="0.033669"/>
+    <testcase name="test_rate_get_name" class="Unit_test" classname="Unit_test" file="/www/kp/api-chatbot/application/tests/controllers/unit_test.php" line="29" assertions="2" time="0.019567"/>
+    <testcase name="test_rate_get_name_failed" class="Unit_test" classname="Unit_test" file="/www/kp/api-chatbot/application/tests/controllers/unit_test.php" line="40" assertions="2" time="0.026668"/>
   </testsuite>
 </testsuites>

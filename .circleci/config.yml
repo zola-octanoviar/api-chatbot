@@ -50,7 +50,7 @@ jobs:
       - run:
           name: Prepare Unit Test
           command: |
-            ./api/vendor/bin/phpunit --version
+            ~/api/vendor/bin/phpunit --version
             #cd application/tests
 
       # run tests!

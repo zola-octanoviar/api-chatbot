@@ -43,7 +43,7 @@ jobs:
             php composer.phar --version
       - run:
           name: Install project dependencies
-          command: php composer.phar instal
+          command: php composer.phar install
 
       #- run: composer install -n --prefer-dist
 
@@ -51,6 +51,13 @@ jobs:
           paths:
             - ./vendor
           key: v1-dependencies-{{ checksum "composer.json" }}
-        
+
+      - run:
+          name: Prepare Unit Test
+          command: |
+            cd application/tests
+            phpunit --version
+
+      - run: cd application/tests        
       # run tests!
       - run: phpunit controllers/unit_test.php

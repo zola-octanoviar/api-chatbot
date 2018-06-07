@@ -42,8 +42,8 @@ jobs:
           command: php composer.phar install
 
       - test:
-        override:
-          - cd application/tests && ~/api/vendor/bin/phpunit
+          override:
+            cd application/tests && ~/api/vendor/bin/phpunit
 
       - run:
           name: Prepare Unit Test

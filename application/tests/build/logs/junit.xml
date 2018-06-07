@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="TestCase" file="/www/kp/api-chatbot/application/tests/TestCase.php" tests="1" assertions="0" errors="0" failures="1" skipped="0" time="0.000526">
+    <testcase name="Warning" assertions="0" time="0.000526">
+      <warning type="PHPUnit\Framework\Warning">Warning
+No tests found in class "TestCase".
+
+</warning>
+    </testcase>
+  </testsuite>
+</testsuites>

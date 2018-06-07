@@ -34,7 +34,9 @@ jobs:
           - v1-dependencies-
 
       - run: php composer.phar install -n --prefer-dist
+      - run: php composer.phar global require phpunit/phpunit
 
+      
       - save_cache:
           paths:
             - ./vendor

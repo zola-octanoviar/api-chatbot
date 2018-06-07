@@ -41,6 +41,10 @@ jobs:
           command: |
             php -v
             php composer.phar --version
+            ls -la
+            pwd
+            
+
       - run:
           name: Install project dependencies
           command: php composer.phar install

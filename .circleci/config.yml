@@ -59,4 +59,4 @@ jobs:
             cd application/tests
 
       # run tests!
-      - run: ./vendor/bin/phpunit controllers/unit_test.php
+      - run: ../../vendor/bin/phpunit controllers/unit_test.php

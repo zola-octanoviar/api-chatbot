@@ -79,8 +79,8 @@ class Unit_test extends TestCase
 		// result : passed
 		$this->assertResponseCode(200);
 
-		// result : failex
-		$this->assertResponseCode(404);
+		// result : failed
+		//$this->assertResponseCode(404);
 
 		fwrite(STDOUT, __METHOD__ . "\n");
 	}

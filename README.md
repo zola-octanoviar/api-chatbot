@@ -33,8 +33,8 @@ todo
 
 ## Php Packages (via composer.json)
 ```
-"chriskacerguis/codeigniter-restserver": "^3.0",
-"kenjis/ci-phpunit-test": "^0.16.1"
+chriskacerguis/codeigniter-restserver: ^3.0,
+kenjis/ci-phpunit-test: ^0.16.1
 ```
 
 

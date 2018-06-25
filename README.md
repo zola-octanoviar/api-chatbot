@@ -21,6 +21,20 @@ Windows:
 todo
 ```
 
+Run PHPUnit test
+```
+cd application/tests
+(xdebug installed)
+phpunit 
+
+(xdebug not installed)
+phpunit --no-coverage
+
+(run specifics unit test )
+phpunit --no-coverage --debug controllers/Unit_test.php
+```
+
+
 ### Composer Setup 
 ```
 MacOs :

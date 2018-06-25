@@ -52,7 +52,7 @@
 
 * Compatible with CodeIgniter 3.1.4
 
-## v0.14.0 (2017/02/09)
+## v0.10.0 (2017/02/09)
 
 ### Upgrade Note for PHPUnit 6.0 users
 

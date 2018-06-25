@@ -7,17 +7,26 @@ jobs:
   build:
     docker:
       # specify the version you desire here
-      - image: circleci/php:7.1.5-browsers
-      
+      - image: circleci/php:7.1-browsers
+
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mysql:9.4
 
-    working_directory: ~/kp-api-chatbot
+    working_directory: ~/repo
 
     steps:
       - checkout
+      - run:
+          name: Install Composer
+          command: |
+            php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+            php -r "if (hash_file('SHA384', 'composer-setup.php') === trim(file_get_contents('https://composer.github.io/installer.sig'))) { echo 'Installer verified'; } else { echo 'Installer invalid'; unlink('composer-setup.php'); } echo PHP_EOL;"
+            php composer-setup.php
+            php -r "unlink('composer-setup.php');"
+            php composer.phar self-update
+            sudo mv composer.phar /usr/local/bin/composer
 
       # Download and cache dependencies
       - restore_cache:
@@ -27,11 +36,17 @@ jobs:
           - v1-dependencies-
 
       - run: composer install -n --prefer-dist
+      - run: composer global require phpunit/phpunit
 
+      
       - save_cache:
           paths:
             - ./vendor
           key: v1-dependencies-{{ checksum "composer.json" }}
-        
-      # run tests!
-      - run: phpunit controllers/unit_test.php
+
+      - run:
+          name: Run Unit Test
+          command: |
+            cd application/tests
+            ~/repo/vendor/bin/phpunit
+

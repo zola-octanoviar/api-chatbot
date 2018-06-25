@@ -72,9 +72,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<div id="body">
 		<p>The page you are looking at is not authorized.</p>
-
 	</div>
 </div>
-
 </body>
 </html>

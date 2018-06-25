@@ -20,6 +20,11 @@ class Product extends \Restserver\Libraries\REST_Controller {
         parent::__construct();
     }
 
+    public function index_get()
+    {
+        $this->load->view('unauthorized');
+    }
+
     public function rate_get()
     {
         // Users from a data store e.g. database

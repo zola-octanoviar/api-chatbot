@@ -118,10 +118,10 @@ $(document).ready(function(){
         if (email && password) {
             if(!isEmail(email)) {
                 // test : passed
-                //$("#message-login").text('Invalid Email Address!')        
+                $("#message-login").text('Invalid Email Address!')        
 
                 // test : failed
-                $("#message-login").text('Failed!')        
+                //$("#message-login").text('Failed!')        
             } else {
                 is_valid = true;
             }
@@ -130,15 +130,13 @@ $(document).ready(function(){
             $("#message-login").text('Email Address / Password can not be blank!')        
 
             // test : failed
-            $("#message-login").text('Email Address / Password mandatory!')        
+            //$("#message-login").text('Email Address / Password mandatory!')        
         }
         console.log('is_valid = ' + is_valid);
 
         //result = failed if commented
-        /*
         if(is_valid)
             return true;
-        */    
         //result = passed 
         return false;
     });

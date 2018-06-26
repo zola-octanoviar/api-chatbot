@@ -126,11 +126,12 @@ $(document).ready(function(){
         }
         console.log('is_valid = ' + is_valid);
 
-        //result = passed ui test
+        //result = failed if commented
+        /*
         if(is_valid)
             return true;
-        
-        //result = passed ui test
+        */
+        //result = passed 
         return false;
     });
 })

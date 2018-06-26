@@ -117,12 +117,20 @@ $(document).ready(function(){
         is_valid = false;
         if (email && password) {
             if(!isEmail(email)) {
-                $("#message-login").text('Invalid Email Address!')        
+                // test : passed
+                //$("#message-login").text('Invalid Email Address!')        
+
+                // test : failed
+                $("#message-login").text('Failed!')        
             } else {
                 is_valid = true;
             }
         } else {
-            $("#message-login").text('Email Address / Password can not be blank!')        
+            // test : passed
+            //$("#message-login").text('Email Address / Password can not be blank!')        
+
+            // test : failed
+            $("#message-login").text('Email Address / Password mandatory!')        
         }
         console.log('is_valid = ' + is_valid);
 
@@ -138,11 +146,7 @@ $(document).ready(function(){
 
 function isEmail(email) {
     var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    //result = passed 
-    //return regex.test(email);
-
-    //result = failed
-    return false; 
+    return regex.test(email);
 }
 </script>
 

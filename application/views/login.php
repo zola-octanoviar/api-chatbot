@@ -127,10 +127,9 @@ $(document).ready(function(){
         console.log('is_valid = ' + is_valid);
 
         //result = failed if commented
-        /*
         if(is_valid)
             return true;
-        */
+
         //result = passed 
         return false;
     });

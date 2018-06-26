@@ -126,9 +126,12 @@ $(document).ready(function(){
         }
         console.log('is_valid = ' + is_valid);
         if(is_valid)
-            // result : failad if commented below
+            // result : pass 
             //return true;
+            // result : failad 
+            return false;
         
+
         return false;
     });
 })

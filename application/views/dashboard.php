@@ -6,7 +6,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="<?php echo base_url();?>assets/img/basic/favicon.ico" type="image/x-icon">
-    <title>Paper</title>
+    <title>KP - Admin</title>
     <!-- CSS -->
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/app.css">
     <style>
@@ -611,7 +611,7 @@
                         <a class="nav-link" id="v-pills-3-tab" data-toggle="pill" href="#v-pills-3"><i class="icon icon-calendar"></i>By Date</a>
                     </li>
                     <li>
-                        <a class="nav-link" id="v-pills-3-tab" href="user.htm"><i class="icon icon-user"></i>User</a>
+                        <a class="nav-link" id="v-pills-3-tab" href="<?php echo base_url();?>user"><i class="icon icon-user"></i>User</a>
                     </li>
                 </ul>
                 <a class="btn-fab fab-right btn-primary" data-toggle="control-sidebar">

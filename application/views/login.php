@@ -125,12 +125,11 @@ $(document).ready(function(){
             $("#message-login").text('Email Address / Password can not be blank!')        
         }
         console.log('is_valid = ' + is_valid);
+        /*
+        result = passed ui test
         if(is_valid)
-            // result : pass 
-            //return true;
-            // result : failad 
             return false;
-        
+        */
 
         return false;
     });

@@ -3,7 +3,6 @@
  * Chatbot Unit Test
  * @author     Zola
  */
-
 class Unit_test extends TestCase
 {
 	protected $strictRequestErrorCheck = false;
@@ -22,8 +21,7 @@ class Unit_test extends TestCase
 		$this->assertResponseCode(200);
 		fwrite(STDOUT, __METHOD__ . "\n");
 	}
-
-
+	
 	public function test_rate_get_name()
 	{
 		try {
@@ -71,7 +69,6 @@ class Unit_test extends TestCase
 		$this->assertResponseCode(404);
 		fwrite(STDOUT, __METHOD__ . "\n");
 	}
-
 
 	public function test_method_200()
 	{

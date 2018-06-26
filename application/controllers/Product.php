@@ -104,4 +104,11 @@ class Product extends \Restserver\Libraries\REST_Controller {
             }
         }
     }
+
+    public function test(){
+        $this->set_response([
+            'status' => TRUE,
+            'message' => 'test function '
+        ]);
+    }
 }

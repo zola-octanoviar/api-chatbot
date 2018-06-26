@@ -84,9 +84,10 @@
                     <div class="text-center">
                         <img src="<?php echo base_url();?>assets/img/dummy/u5.png" alt="">
                         <h3 class="mt-2">Welcome Back</h3>
-                        <p id="message-login" class="p-t-b-20">Hey Soldier welcome back signin now there is lot of new stuff waiting
+                        <p class="p-t-b-20">Hey Soldier welcome back signin now there is lot of new stuff waiting
                             for you</p>
                     </div>
+                    <p id="message-login" class="text-center btn-danger"></p>
                     <form id="form-login" action="<?php echo base_url();?>dashboard">
                         <div class="form-group has-icon"><i class="icon-envelope-o"></i>
                             <input id="email" type="text" class="form-control form-control-lg"

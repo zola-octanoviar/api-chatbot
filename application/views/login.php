@@ -130,7 +130,8 @@ $(document).ready(function(){
         if(is_valid)
             return false;
         */
-
+        
+        //result = passed ui test
         return false;
     });
 })

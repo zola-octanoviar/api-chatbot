@@ -126,18 +126,11 @@ $(document).ready(function(){
         }
         console.log('is_valid = ' + is_valid);
         if(is_valid)
-            return true;
-
+            // result : failad if commented below
+            //return true;
+        
         return false;
     });
-    /*
-    $( "#btn-submit" ).click(function() {
-        alert( "email = "  + email);
-        if(!email) {
-            alert('invalid email address')
-        }
-    });    
-    */
 })
 
 function isEmail(email) {

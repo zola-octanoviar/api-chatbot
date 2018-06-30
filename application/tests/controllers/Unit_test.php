@@ -93,5 +93,4 @@ class Unit_test extends TestCase
 		);
 		fwrite(STDOUT, __METHOD__ . "\n");
 	}
-	
 }

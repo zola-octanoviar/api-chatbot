@@ -25,6 +25,7 @@ class Product extends \Restserver\Libraries\REST_Controller {
         $this->load->view('unauthorized');
     }
 
+
     public function rate_get()
     {
         // Users from a data store e.g. database
@@ -102,5 +103,12 @@ class Product extends \Restserver\Libraries\REST_Controller {
                 ], \Restserver\Libraries\REST_Controller::HTTP_NOT_FOUND); // NOT_FOUND (404) being the HTTP response code
             }
         }
+    }
+
+    public function test(){
+        $this->set_response([
+            'status' => TRUE,
+            'message' => 'test function '
+        ]);
     }
 }

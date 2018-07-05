@@ -74,10 +74,10 @@ class Unit_test extends TestCase
 	{
 		$this->request('GET', 'product/test');
 		// result : passed
-		//$this->assertResponseCode(200);
+		$this->assertResponseCode(200);
 
 		// result : failed
-		$this->assertResponseCode(404);
+		//$this->assertResponseCode(404);
 
 		fwrite(STDOUT, __METHOD__ . "\n");
 	}

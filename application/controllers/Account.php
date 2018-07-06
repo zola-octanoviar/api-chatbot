@@ -7,5 +7,6 @@ class Account extends CI_Controller {
 	{
 		$this->load->view('login');
 		//test
+		//test 1
 	}
 }
